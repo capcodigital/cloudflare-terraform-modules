@@ -2,6 +2,8 @@ variable "api_token" {}
 variable "zone_id" {}
 variable "name" {}
 variable "value" {}
+variable "name2" {}
+variable "value2" {}
 variable "domain" {}
 variable "tls" { default = false }
 variable "login_limit" { default = false }
