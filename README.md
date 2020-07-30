@@ -1,8 +1,12 @@
 On the root folder create an environement variable for 'cloudflare_api_token':
 
-`export TF_VAR_cloudflare_api_token="[YOUR TOKEN HERE]"`
-or
 `export TF_VAR_api_key="[YOUR API KEY]"`
+
+or
+
+
+`export TF_VAR_cloudflare_api_token="[YOUR TOKEN HERE]"`
+
 
 Api keys and token are available on the cloudflare portal: https://dash.cloudflare.com/dbde1df0627ead83cd1e6df9bfe90be3/capco.io
 
