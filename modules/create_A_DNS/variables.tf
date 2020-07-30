@@ -1,4 +1,6 @@
 variable "api_token" {}
+variable "api_key" {}
+variable "email" {}
 variable "zone_id" {}
 variable "name" {}
 variable "value" {}

@@ -1,8 +1,3 @@
-#This module creates a DNS, type: 'A'
+#This module creates two DNS, type: 'A' with a load balance and monitor
 
-Input variables:
-
-- api_token
-- zone_id
-- name
-- value
+Input variables in variables.tf

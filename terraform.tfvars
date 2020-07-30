@@ -1,9 +1,12 @@
 cloudflare_zone_id      = "1cc14dda26244d352ca113851a05c61a"
+email                   = "andrea.ferrando@capco.com"
 dns_name                = "terraform_www"
 dns_value               = "203.0.113.10"
 dns_name2               = "terraform_www_2"
 dns_value2              = "198.51.100.15"
-domain                  = "example.com"
+domain                  = "capco.com"
+pool_name               = "pool name here"
+load_balancer_name      = "load balancer name here"
 tls                     = false
 login_limit             = false 
 load_balancer_monitor   = false        
