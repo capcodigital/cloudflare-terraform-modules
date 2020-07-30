@@ -3,7 +3,7 @@ module "DNS_A" {
   api_token   = var.cloudflare_api_token
   email       = var.email
   api_key     = var.api_key
-  zone_id     = var.cloudflare_zone_id 
+  zone_id     = var.cloudflare_zone_id
   name        = var.dns_name
   value       = var.dns_value
   domain      = var.domain
@@ -11,13 +11,13 @@ module "DNS_A" {
   login_limit = var.login_limit
 }
 
- 
+
 # module "DNS_A_load_balance" {
 #   source      = "./modules/create_A_DNS_Load_Balance"
 #   api_token   = var.cloudflare_api_token
 #   email       = var.email
 #   api_key     = var.api_key
-#   zone_id     = var.cloudflare_zone_id 
+#   zone_id     = var.cloudflare_zone_id
 #   name        = var.dns_name
 #   value       = var.dns_value
 #   name2       = var.dns_name2

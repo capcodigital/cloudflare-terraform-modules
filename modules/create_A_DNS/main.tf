@@ -1,7 +1,7 @@
 provider "cloudflare" {
   version = "~> 2.0"
-  email   = var.email 
-  api_key = var.api_key 
+  email   = var.email
+  api_key = var.api_key
   # api_token = var.api_token
 }
 
