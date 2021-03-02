@@ -1,13 +1,31 @@
-cloudflare_zone_id      = "1cc14dda26244d352ca113851a05c61a"
-email                   = "andrea.ferrando@capco.com"
-dns_name                = "terraform_www"
-dns_value               = "203.0.113.10"
-dns_name2               = "terraform_www_2"
-dns_value2              = "198.51.100.15"
-domain                  = "capco.com"
-pool_name               = "pool name here"
-load_balancer_name      = "load balancer name here"
-tls                     = false
-login_limit             = false
-load_balancer_monitor   = false
-load_balancer_pool      = false
+# shared ------------------------------------
+zone_id    = "1cc14dda26244d352ca113851a05c61a"
+domain     = "capco.io"
+tls        = true
+rate_limit = false
+schemes    = ["HTTPS", "HTTP"]
+methods    = ["GET"]
+statuses   = [200, 201, 202]
+
+# dns ---------------------------------------
+
+name    = "dns"
+value   = "8.8.8.8"
+proxied = true
+
+# load balancer -----------------------------
+dns = [{
+  name    = "www1"
+  value   = "8.8.8.8"
+  enabled = true
+  },
+  {
+    name    = "www2"
+    value   = "8.8.8.8"
+    enabled = false
+}]
+load_balancer_monitor = true
+load_balancer_pool    = true
+pool_name             = "pool"
+load_balancer_name    = "lb"
+notification_email    = "jonathan.fenwick@delineate.io"
